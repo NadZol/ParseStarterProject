@@ -16,18 +16,18 @@ public class StarterApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // Enable Local Datastore.
+        /*// Enable Local Datastore.
         Parse.enableLocalDatastore(this);
 
         // Add your initialization code here
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-                .applicationId("")
-                .clientKey("")
-                .server("")
+                .applicationId("myappID")
+                .clientKey("T6SV3rzGjgc3")
+                .server("http://18.222.193.163/parse/")
                 .build()
         );
 
-        ParseObject object = new ParseObject("ExampleObject");
+        /*ParseObject object = new ParseObject("ExampleObject");
         object.put("myNumber", "123");
         object.put("myString", "rob");
 
@@ -40,15 +40,14 @@ public class StarterApplication extends Application {
                     Log.i("Parse Result", "Failed" + ex.toString());
                 }
             }
-        });
+        });*/
 
 
-        ParseUser.enableAutomaticUser();
+        /*ParseUser.enableAutomaticUser();
 
         ParseACL defaultACL = new ParseACL();
         defaultACL.setPublicReadAccess(true);
         defaultACL.setPublicWriteAccess(true);
-        ParseACL.setDefaultACL(defaultACL, true);
-
+        ParseACL.setDefaultACL(defaultACL, true);*/
     }
 }
